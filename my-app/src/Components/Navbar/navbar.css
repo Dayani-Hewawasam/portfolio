@@ -1,0 +1,65 @@
+.navbar{
+    height: 5rem;
+    width: 100vm;
+    max-width: 75rem;
+    margin: 0 auto ;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 3; 
+}
+
+.logo{
+    object-fit: cover;
+    height: 3rem;
+    width: 4rem;
+
+}
+
+.desktopMenuListItem{
+    margin: 1rem;
+    cursor: pointer;
+}
+.desktopMenuListItem:hover{
+    color: #f8f8f8;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid;
+}
+.desktopMenubtn {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; 
+    gap: 15px; /* Space between icons */
+    margin-top: 20px;
+}
+
+.desktopMenubtn button {
+    background: rgb(255, 255, 255);
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.desktopMenubtn button:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+    border-color: #000000; /* LinkedIn Blue */
+}
+
+.desktopMenulogo {
+    width: 30px; /* Adjust size as needed */
+    height: 30px;
+}
+
+
+
+    
+
