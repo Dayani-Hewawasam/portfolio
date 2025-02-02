@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Navbar from './Components/Navbar/navbar'
 import Intro from './Components/Intro/intro'
+import Skills from './Components/Skills/skills'
 
 
 
@@ -11,6 +12,7 @@ function App() {
     <div className='App'>
         <Navbar/>
         <Intro/>
+        <Skills/>
     </div>
   )
 }

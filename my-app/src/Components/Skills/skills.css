@@ -1,0 +1,41 @@
+.skills-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content horizontally */
+    justify-content: center; /* Centers content vertically */
+    text-align: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #000000; /* Light background for contrast */
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  .tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px; /* Limits grid width */
+  }
+  
+  .tech-icon {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .tech-icon:hover {
+    transform: scale(1.1);
+  }
+  
