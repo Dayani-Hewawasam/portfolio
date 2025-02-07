@@ -38,10 +38,6 @@ To run my portfolio locally:
  npm run dev
 ```
 
-//## Deployment
-//- Hosted on Vercel/Netlify for web
-//- Mobile apps available on Google Play Store (if applicable)
-
 ## Contact
 📧 Email: [dayanihewawasam@gmail.com](mailto:dayanihewawasam@gmail.com)  
 🔗 LinkedIn: [https://www.linkedin.com/in/dayani-hewawasam-33353128b](https://www.linkedin.com/in/dayani-hewawasam-33353128b)  
