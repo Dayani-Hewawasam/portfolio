@@ -13,6 +13,7 @@ const techStack = [
   { name: "Firebase", src: "/public/firebase.png" },
   { name: "Docker", src: "/public/docker.png" },
   { name: "Figma", src: "/public/figma.png" },
+  { name: "GitHub", src: "/public/github.png" },
 ];
 
 const Skills = () => {

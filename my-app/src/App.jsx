@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Navbar from './Components/Navbar/navbar'
 import Intro from './Components/Intro/intro'
 import Skills from './Components/Skills/skills'
+import Projects from './Components/Project/Project'
 
 
 
@@ -13,6 +14,7 @@ function App() {
         <Navbar/>
         <Intro/>
         <Skills/>
+        <Projects/>
     </div>
   )
 }
