@@ -1,0 +1,86 @@
+.contactPageTitle {
+    padding-top: 3rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.contactDesc {
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.name, .email, .msg {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #949393;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.submitBtn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #072149;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submitBtn:hover {
+    background: #06162e;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+   
+}
+
+.link {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.link:hover {
+    transform: scale(1.1);
+}
+
+input, textarea {
+    color: white;  /* Text color inside input fields */
+    background-color: transparent;  /* Optional: Make background transparent */
+    border: 1px solid white; /* Optional: Add a white border for better visibility */
+    padding: 10px; /* Adjust padding for better spacing */
+  }
+  
+  input::placeholder, textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);  /* Light white/gray color for placeholder */
+  }
+  
