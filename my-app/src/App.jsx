@@ -1,6 +1,6 @@
 import Navbar from './Components/Navbar/navbar'
 import Intro from './Components/Intro/intro'
-import Skills from './Components/Skills/skills'
+import Skills from './Components/Skills/Skills'
 import Projects from './Components/Project/Project'
 import Contact from './Components/Contact/contact'
 import Footer from './Components/Footer/footer'
