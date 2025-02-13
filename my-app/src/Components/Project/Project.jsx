@@ -2,12 +2,14 @@ import React, { useState, useEffect, useRef } from "react";
 import "./Project.css";
 
 const projectsData = [
-  { id: 1,
+  { 
+    id: 1,
     name: "My Portfolio",
     description: "A relaxation app with animated breathing techniques.",
-    thumbnail:  "/portfolio.png",
+    thumbnail: "/portfolio.png",
     githubLink: "https://github.com/yourusername/breathing-exercise-app",
-  },{
+  },
+  {
     id: 2,
     name: "Stress Free Zone",
     description: "A mental wellness app to reduce stress levels.",
@@ -38,32 +40,34 @@ const projectsData = [
   {
     id: 6,
     name: "Sports League Management System",
-    description: "Sports League Management System: A comprehensive solution for managing players, teams, games, leagues, and sponsors. This system is designed with MySQL for efficient data storage and management, and the database structure is modeled using an Entity-Relationship (ER) diagram created in draw.io.",
+    description: "A system for managing sports leagues with MySQL and ER diagrams.",
     thumbnail: "/sportleaguemanagement.png",
     githubLink: "https://github.com/Lahiru-Herath/Sports-League-Management-System",
   },
-  
-   
-
 ];
 
+// Duplicate the projects list for a continuous scrolling effect
 const Projects = () => {
   const [isPaused, setIsPaused] = useState(false);
   const scrollRef = useRef(null);
 
-  // Auto-scroll logic
   useEffect(() => {
-    if (!scrollRef.current) return;
+    const scrollContainer = scrollRef.current;
+    if (!scrollContainer) return;
 
-    let scrollAmount = 1; // Speed of scroll
+    let scrollAmount = 1.5; // Speed of scroll
+    let direction = 1; // 1 for right, -1 for left
+
     const scrollInterval = setInterval(() => {
       if (!isPaused) {
-        scrollRef.current.scrollLeft += scrollAmount;
-        if (scrollRef.current.scrollLeft >= scrollRef.current.scrollWidth - scrollRef.current.clientWidth) {
-          scrollRef.current.scrollLeft = 0; // Restart scrolling
+        scrollContainer.scrollLeft += scrollAmount * direction;
+
+        // When reaching the end, reset scroll position for seamless effect
+        if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth / 2) {
+          scrollContainer.scrollLeft = 0;
         }
       }
-    }, 30); // Adjust speed
+    }, 20); // Adjust speed for smooth scrolling
 
     return () => clearInterval(scrollInterval);
   }, [isPaused]);
@@ -80,13 +84,10 @@ const Projects = () => {
         onMouseLeave={() => setIsPaused(false)}
       >
         <div className="projects-container">
-          {projectsData.map((project) => (
-            <div key={project.id} className="project-card">
-              <img
-                src={project.thumbnail}
-                alt={project.name}
-                className="project-thumbnail"
-              />
+          {/* Duplicate the project items for infinite scrolling */}
+          {[...projectsData, ...projectsData].map((project, index) => (
+            <div key={index} className="project-card">
+              <img src={project.thumbnail} alt={project.name} className="project-thumbnail" />
               <div className="project-info">
                 <h3>{project.name}</h3>
                 <p>{project.description}</p>
