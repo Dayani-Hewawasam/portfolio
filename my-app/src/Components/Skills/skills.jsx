@@ -2,18 +2,18 @@ import React from "react";
 import "./Skills.css";
 
 const techStack = [
-  { name: "HTML", src: "/public/html.png" },
-  { name: "CSS", src: "/public/css.png" },
-  { name: "JavaScript", src: "/public/javascript.png" },
-  { name: "Tailwind", src: "/public/tailwindcss.png" },
-  { name: "React", src: "/public/reactnative.png" },
-  { name: "TypeScript", src: "/public/typescript.png" },
-  { name: "Node.js", src: "/public/nodejs.png" },
-  { name: "MongoDB", src: "/public/mongodb.png" },
-  { name: "Firebase", src: "/public/firebase.png" },
-  { name: "Docker", src: "/public/docker.png" },
-  { name: "Figma", src: "/public/figma.png" },
-  { name: "GitHub", src: "/public/github.png" },
+  { name: "HTML", src: "/html.png" },
+  { name: "CSS", src: "/css.png" },
+  { name: "JavaScript", src: "/javascript.png" },
+  { name: "Tailwind", src: "/tailwindcss.png" },
+  { name: "React", src: "/reactnative.png" },
+  { name: "TypeScript", src: "/typescript.png" },
+  { name: "Node.js", src: "/nodejs.png" },
+  { name: "MongoDB", src: "/mongodb.png" },
+  { name: "Firebase", src: "/firebase.png" },
+  { name: "Docker", src: "/docker.png" },
+  { name: "Figma", src: "/figma.png" },
+  { name: "GitHub", src: "/github.png" },
 ];
 
 const Skills = () => {

@@ -1,28 +1,32 @@
-import { useState } from 'react'
 import Navbar from './Components/Navbar/navbar'
 import Intro from './Components/Intro/intro'
 import Skills from './Components/Skills/skills'
 import Projects from './Components/Project/Project'
 import Contact from './Components/Contact/Contact'
 import Footer from './Components/Footer/footer'
-
-
-
+import React from "react";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className='App'>
-        <Navbar/>
-        <Intro/>
-        <Skills/>
-        <Projects/>
-        <Contact/>
-        <Footer/>
-        
+    <div>
+      <Navbar />
+      {/* Sections with matching ids for scrolling */}
+      <div id="about">
+        <Intro />
+      </div>
+      <div id="skills">
+        <Skills />
+      </div>
+      <div id="projects">
+        <Projects />
+      </div>
+      <div id="contact">
+        <Contact />
+      </div>
+
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
