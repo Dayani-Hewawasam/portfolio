@@ -1,19 +1,26 @@
+.intro-space{
+       background: linear-gradient(135deg, #000000, #28357a, #071332, #000205);
+}
 #intro {
     height: calc(100vh - 4rem);
     width: 100vw;
     max-width: 75rem;
     margin: 0 auto;
     overflow: hidden;
-    color: #F4F4F4;
+    color: #f4f4f4;
+    position: relative;
+    
 }
 
 .bg {
     position: absolute;
-    top: -4rem;
+    top: 0;
     right: 0;
-    z-index: -1;
+    z-index: 1;
     object-fit: cover;
     height: 100vh;
+    width: auto;
+    max-width: 60%; /* Limit image width on larger screens */
     
 }
 
@@ -33,15 +40,23 @@
     font-weight: 100;
 }
 
+.introText {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
 .introName {
-    color: aqua;
+    color: rgb(130, 132, 162);
 }
 
 .introPara {
-    font-size: medium;
+    font-size: 1rem;
     font-weight: 100;
-    display: flex;
     color: white;
+    margin-top: 1rem;
+    line-height: 1.5;
+    max-width: 600px; /* Limit paragraph width for readability */
 }
 
 .btn {
@@ -51,35 +66,68 @@
     border: none;
     border-radius: 2rem;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 .btnImg {
     object-fit: cover;
-    margin: 0 0.25rem;
     height: 1rem;
 }
 
 /* Responsive Design */
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 768px) {
     .bg {
-        right: -20vw;
+        max-width: 60%; /* Adjust image width for tablets */
     }
+
     .introContent {
-        font-size: 10vw;
+        font-size: 2rem;
     }
-    .hello {
-        font-size: 4.5vw;
+
+    .introText {
+        font-size: 2rem;
+    }
+
+    .introPara {
+        font-size: 0.9rem;
+        max-width: 80%; /* Adjust paragraph width for tablets */
     }
 }
 
 @media screen and (max-width: 480px) {
     .bg {
-        right: -30vw;
+        max-width: 70%; /* Adjust image width for mobile */
+        right: -10vw; /* Shift image slightly to the left */
     }
+
     .introContent {
-        font-size: 8vw;
+        font-size: 1.5rem;
+        padding: 1rem;
     }
+
     .hello {
-        font-size: 4.5vw;
+        font-size: 1.25rem;
+    }
+
+    .introText {
+        font-size: 1.5rem;
+    }
+
+    .introPara {
+        font-size: 0.8rem;
+        max-width: 90%; /* Adjust paragraph width for mobile */
+    }
+
+    .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .btnImg {
+        height: 0.8rem;
     }
 }

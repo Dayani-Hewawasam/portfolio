@@ -1,3 +1,6 @@
+.contact-section{
+  background: linear-gradient(135deg, #7e71c7, #263065, #040b1c, #000204);
+}
 .contactPageTitle {
     padding-top: 3rem;
     text-align: center;
@@ -12,7 +15,7 @@
     text-align: center;
     font-size: 1.2rem;
     margin-bottom: 20px;
-    color: #555;
+    color: #b8b4b4;
 }
 
 .contactForm {

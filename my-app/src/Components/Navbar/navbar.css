@@ -10,7 +10,7 @@
     position: sticky;
     top: 0;
     z-index: 1000; 
-    background-color: rgb(0, 13, 66);
+    background: linear-gradient(135deg, #140d21, #30365b, #1c2743, #010c1d);
 }
 .logo{
     object-fit: cover;

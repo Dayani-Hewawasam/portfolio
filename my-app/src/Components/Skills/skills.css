@@ -1,41 +1,86 @@
 .skills-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centers content horizontally */
-    justify-content: center; /* Centers content vertically */
-    text-align: center;
-    height: 100vh; /* Full viewport height */
-    background-color: #000000; /* Light background for contrast */
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers content horizontally */
+  justify-content: center; /* Centers content vertically */
+  text-align: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #000000; /* Light background for contrast */
+  padding: 20px; /* Add some padding */
+  overflow: hidden;
+  background: linear-gradient(135deg, #65617e, #0d112a, #04102f, #3f5f92);
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #9c9999;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Responsive grid */
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px; /* Limits grid width */
+  width: 100%; /* Ensure grid takes full width */
+  padding: 0 20px; /* Add some padding */
+}
+
+.tech-icon {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  transition: transform 0.3s ease-in-out;
+}
+
+.tech-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
   h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
+      font-size: 1.5rem;
   }
-  
+
   p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    color: #9c9999;
+      font-size: 1rem;
   }
-  
+
   .tech-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Responsive grid */
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    max-width: 800px; /* Limits grid width */
+      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Adjust grid for smaller screens */
+      gap: 15px;
   }
-  
+
   .tech-icon {
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
-    transition: transform 0.3s ease-in-out;
+      width: 60px;
+      height: 60px;
   }
-  
-  .tech-icon:hover {
-    transform: scale(1.1);
+}
+
+@media (max-width: 480px) {
+  h2 {
+      font-size: 1.2rem;
   }
-  
+
+  p {
+      font-size: 0.9rem;
+  }
+
+  .tech-grid {
+      grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)); /* Adjust grid for very small screens */
+      gap: 10px;
+  }
+
+  .tech-icon {
+      width: 50px;
+      height: 50px;
+  }
+}

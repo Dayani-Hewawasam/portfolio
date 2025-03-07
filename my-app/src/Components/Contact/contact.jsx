@@ -26,7 +26,7 @@ const Contact = () => {
       );
     };
   return (
-    <> 
+    <div className='contact-section'> 
     <h1 className='contactPageTitle'>Contact Me</h1>
     <span className='contactDesc'>Please fill out the form below to discuss any work opportunity</span>
     <form className='contactForm' ref={form} onSubmit={sendEmail}>
@@ -49,7 +49,7 @@ const Contact = () => {
           </a>
         </div>
     </form>
-    </>
+    </div>
   )
 }
 

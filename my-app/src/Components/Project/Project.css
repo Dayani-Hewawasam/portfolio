@@ -1,8 +1,10 @@
 .projects-section {
   text-align: center;
-  padding: 2rem;
+  padding: 4rem;
+  height: 90vh;
   background-color: #181717;
   overflow: hidden;
+  background: linear-gradient(135deg, #6d6884, #141625, #0b1531, #5b6779);
 }
 
 .projects-scroll {

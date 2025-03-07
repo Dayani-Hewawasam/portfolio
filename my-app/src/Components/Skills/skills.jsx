@@ -14,6 +14,10 @@ const techStack = [
   { name: "Docker", src: "/docker.png" },
   { name: "Figma", src: "/figma.png" },
   { name: "GitHub", src: "/github.png" },
+  { name: "Python", src: "/python.png" },
+  { name: "Mysql", src: "/mysql.png" },
+  { name: "Jenkins", src: "/jenkins.png" },
+  { name: "Java", src: "/java.png" },
 ];
 
 const Skills = () => {
