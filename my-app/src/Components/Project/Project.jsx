@@ -44,6 +44,27 @@ const projectsData = [
     thumbnail: "/sportleaguemanagement.png",
     githubLink: "https://github.com/Lahiru-Herath/Sports-League-Management-System",
   },
+    {
+    id: 7,
+    name: "Traffic Light Detection System",
+    description: "YOLOv8s + Temporal Verification Module for real-time traffic light detection",
+    thumbnail: "/traffic_light_thumbnail.png",
+    githubLink: "https://github.com/Jackshan-Venujan/Traffic-Light-simplified",
+  },
+  {
+    id: 8,
+    name: "Student Marks Predictor",
+    description: "A machine learning model for student grade prediction.",
+    thumbnail: "/studentsmarkspredictor.jpg",
+    githubLink: "https://github.com/Dayani-Hewawasam/StudentsMarksPredictor",
+  },
+  {
+    id: 9,
+    name: "Sports League Management System",
+    description: "A system for managing sports leagues with MySQL and ER diagrams.",
+    thumbnail: "/sportleaguemanagement.png",
+    githubLink: "https://github.com/Lahiru-Herath/Sports-League-Management-System",
+  },
 ];
 
 // Duplicate the projects list for a continuous scrolling effect
