@@ -1,6 +1,6 @@
 import React from 'react';
 import './intro.css';
-import bg from '../../assets/image.png';
+import bg from '../../assets/image__.png';
 import btnImg from '../../assets/hireme.png';
 import { Link } from 'react-scroll';
 import TypingEffect from 'react-typing-effect';
@@ -12,7 +12,7 @@ const Intro = () => {
     
     <section id="intro">
       <div className="introContent">
-        <span className="hello">Helloooooooooo,</span>
+        <span className="hello">Hello,</span>
         <span className="introText">
           I'm <span className="introName">
             <TypingEffect text={["Dayani Hewawasam,"]} speed={100} eraseDelay={2000} />
